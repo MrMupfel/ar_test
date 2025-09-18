@@ -72,6 +72,15 @@
 <body>
     <div class="viewer-container">
 
+        <div class="skybox-controls">
+            <select class="form-select form-select-sm" aria-label="Skybox select">
+                <option selected>Select Environment</option>
+                <option value="1">Default</option>
+                <option value="2">Grand Entrance</option>
+                <option value="3">Deiters Lecture Hall</option>
+            </select>
+        </div>
+
         <model-viewer id="viewer" src="EVs_1_400nm.glb" ios-src="EVs_1_400nm.usdz" ar
             ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1"
             alt="A 3D model">
@@ -81,15 +90,6 @@
                 <div class="HotspotAnnotation">400nm</div>
             </button>
         </model-viewer>
-
-        <div class="skybox-controls">
-            <select class="form-select form-select-sm" aria-label="Skybox select">
-                <option selected>Select Environment</option>
-                <option value="1">Default</option>
-                <option value="2">Grand Entrance</option>
-                <option value="3">Deiters Lecture Hall</option>
-            </select>
-        </div>
 
     </div>
 
