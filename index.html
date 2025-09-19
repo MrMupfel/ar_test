@@ -84,7 +84,7 @@
 <body>
     <div class="viewer-container">
 
-        <model-viewer id="viewer" src="/assets/models/EVs_1_400nm.glb" ios-src="/assets/models/EVs_1_400nm.usdz" ar
+        <model-viewer id="viewer" src="./assets/models/EVs_1_400nm.glb" ios-src="./assets/models/EVs_1_400nm.usdz" ar
             ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1"
             alt="A 3D model" skybox-image="" environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr">
             <button class="Hotspot" slot="hotspot-1"
@@ -118,8 +118,8 @@
         const skyboxSelect = document.querySelector(".form-select");
 
         const environments = [
-            '/assets/environmets/anatomy2_resized.jpg',
-            '/assets/environments/deiters2_resized.jpg',
+            './assets/environmets/anatomy2_resized.jpg',
+            './assets/environments/deiters2_resized.jpg',
         ]
 
         skyboxSelect.addEventListener("change", (event) => {
