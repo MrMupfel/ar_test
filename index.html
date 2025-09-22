@@ -93,10 +93,17 @@
             z-index: 10;
         }
 
-
         .form-select {
             background-color: rgba(183, 183, 183, 0.622);
             color: whitesmoke;
+        }
+
+        .license button {
+            background-color: none;
+            border: none;
+            color: white;
+            font-size: 0.6rem;
+            font-weight: 50;
         }
     </style>
 </head>
@@ -125,7 +132,26 @@
             <span>F.L.I.R. Demo</span>
 
             <div class="license">
-                License
+                <button type="button" class="btn btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#licenseModal">License</button>
+            </div>
+
+            <div class="modal fade" id="licenseModal" tabindex="-1" aria-labelledby="licenseModalLabel"
+                aria-hidden="true" data-bs-theme="dark">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="licenseModalLabel">License</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            TEST
+                        </div>
+                        <div class="modal-footer">
+                            &copy; 2025 Florian Renziehausen @ FesterLab
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
